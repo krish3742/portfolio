@@ -1,11 +1,19 @@
+import Home from './components/Home';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+
 function App() {
   return (
-    <div className="App">
-      <header className="text-3xl font-bold underline">
-        Hello Kshitij
-      </header>
-    </div>
+    <>
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+    </>
   );
-}
+};
 
 export default App;
