@@ -1,9 +1,7 @@
-import './App.css';
-
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="text-3xl font-bold underline">
         Hello Kshitij
       </header>
     </div>
