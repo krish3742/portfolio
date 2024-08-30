@@ -1,4 +1,4 @@
-function Skills() {
+function Experience() {
     return (
         <>
             <div>
@@ -8,4 +8,4 @@ function Skills() {
     );
 };
 
-export default Skills;
+export default Experience;
