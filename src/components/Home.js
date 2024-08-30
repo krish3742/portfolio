@@ -1,7 +1,4 @@
-import { useState } from "react";
-
 function Home() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const handleDownloadResumeClick = (evt) => {
         evt.preventDefault();
         const pdfUrl = require('../documents/Resume.pdf');
@@ -14,54 +11,7 @@ function Home() {
     };
     return (
         <>
-            <nav className="bg-[#291C3A]">
-                <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-                    <div className="relative flex h-16 items-center justify-between">
-                        <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                            <button onClick={() => setIsMenuOpen(!isMenuOpen)} type="button" className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-                                <span className="absolute -inset-0.5"></span>
-                                <span className="sr-only">Open main menu</span>
-                                <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                                </svg>
-                                <svg className="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between sm:overflow-hidden">
-                            <div className="flex flex-shrink-0 items-center">
-                                <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" />
-                            </div>
-                            <div className="hidden sm:ml-6 sm:block">
-                                <div className="flex space-x-4">
-                                    <a href="google.com" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
-                                    <a href="google.com" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
-                                    <a href="google.com" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Skills</a>
-                                    <a href="google.com" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-                                </div>
-                            </div>
-                            <div className="hidden sm:ml-6 sm:block">
-                                <div className="flex space-x-4">
-                                    <a href="google.com" className="rounded-md bg-[#FFFFFF] px-3 py-2 text-sm font-medium text-[#291C3A]" aria-current="page">Contact Me</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {isMenuOpen &&
-                    <div className="sm:hidden" id="mobile-menu">
-                        <div className="space-y-1 px-2 pb-3 pt-2">
-                            <a href="google.com" className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
-                            <a href="google.com" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
-                            <a href="google.com" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Skills</a>
-                            <a href="google.com" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-                            <a href="google.com" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Me</a>
-                        </div>
-                    </div>
-                }
-            </nav>
-            <div className="bg-[#331C52] min-h-[calc(100vh-128px)] flex justify-center items-center overflow-hidden">
+            <div className="bg-[#331C52] pt-[64px] min-h-[calc(100vh-128px)] flex justify-center items-center overflow-hidden cursor-default">
                 <div className="relative isolate w-screen flex items-center justify-center">
                     <div aria-hidden="true" className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
                         <div
@@ -107,19 +57,21 @@ function Home() {
                 <div className="flex h-16 items-center justify-evenly">
                     <div className="flex items-center gap-3">
                         <p className="text-5xl font-bold text-white">6</p>
-                        <div className="text-sm text-[#DCCFED]">
+                        <div className="text-sm text-[#DCCFED] tracking-widest">
                             <p>MONTHS OF</p>
                             <p>EXPERIENCE</p>
                         </div>
                     </div>
                     <div className="hidden sm:flex sm:flex-shrink-0 sm:items-center sm:gap-4">
+                        <img className="h-8 w-auto bg-cover" src={require('../documents/Java.png')} alt="Java" />
                         <img className="h-8 w-auto bg-cover" src={require('../documents/HTML.png')} alt="HTML" />
                         <img className="h-8 w-auto bg-cover" src={require('../documents/CSS.png')} alt="CSS" />
                         <img className="h-8 w-auto bg-cover" src={require('../documents/JS.png')} alt="JavaScript" />
                         <img className="h-8 w-auto bg-cover" src={require('../documents/MongoDB.png')} alt="MongoDB" />
                         <img className="h-8 w-auto bg-cover" src={require('../documents/MySQL.png')} alt="MySQL" />
-                        <img className="h-8 w-auto bg-cover" src={require('../documents/Node.png')} alt="Node.js" />
+                        <img className="h-8 w-auto bg-cover" src={require('../documents/Express.png')} alt="Express.js" />
                         <img className="h-8 w-auto bg-cover" src={require('../documents/React.png')} alt="React.js" />
+                        <img className="h-8 w-auto bg-cover" src={require('../documents/Node.png')} alt="Node.js" />
                     </div>
                 </div>
             </div>
