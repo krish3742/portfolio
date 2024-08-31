@@ -1,3 +1,5 @@
+import Style from './Home.module.css';
+
 function Home() {
     const handleDownloadResumeClick = (evt) => {
         evt.preventDefault();
@@ -11,7 +13,7 @@ function Home() {
     };
     return (
         <>
-            <div className="bg-[#331C52] pt-[64px] min-h-[calc(100vh-128px)] flex justify-center items-center overflow-hidden cursor-default">
+            <div className={Style.heroContainer}>
                 <div className="relative isolate w-screen flex items-center justify-center">
                     <div aria-hidden="true" className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
                         <div
@@ -22,7 +24,7 @@ function Home() {
                             className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
                         />
                     </div>
-                    <div className="flex flex-col items-center justify-center sm:flex-row">
+                    <div className={Style.container}>
                         <div className="my-4 w-[2/4] h-min max-w-xl flex items-center justify-center">
                             <div className="w-min lg:w-max">
                                 <p className="text-xl font-bold tracking-tight text-white lg:text-2xl">
@@ -47,13 +49,13 @@ function Home() {
                                 </div>
                             </div>    
                         </div>
-                        <div className="h-min sm:h-[calc(100vh-128px)] w-[2/4] flex items-end justify-center">
+                        <div className={Style.imgDiv}>
                             <img className="bg-contain h-min" src={require('../documents/MyImage.png')} alt="MyImage" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 bg-[#291C3A]">
+            <div className="mx-auto max-w-screen px-2 sm:px-6 lg:px-8 bg-[#291C3A]">
                 <div className="flex h-16 items-center justify-evenly">
                     <div className="flex items-center gap-3">
                         <p className="text-5xl font-bold text-white">6</p>
