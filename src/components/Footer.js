@@ -5,7 +5,7 @@ function Footer() {
         <>
             <div className={Style.footer}>
                 <h1 className={Style.heading}>KA.</h1>
-                <p className={Style.para}>Designed and built by <span className={Style.span}>Kshitij Agrawal</span> with <span className={Style.span}>Love</span> & <span className={Style.span}>coffee.</span></p>
+                <p className={Style.para}>Designed and built by <span className={Style.span}>Kshitij Agrawal</span> with <span className={Style.span}>Love</span> & <span className={Style.span}>Coffee</span></p>
                 <p className={Style.para}>&#169; 2024 KA. All rights reserved.</p>
                 <div className="flex space-x-4 -mt-2">
                     <img className="inline-block mt-1 h-6 w-6 bg-cover cursor-pointer" src={require('../documents/GitHub.png')} alt="GitHub" onClick={() => window.open('https://github.com/krish3742', '_blank')} />
