@@ -1,9 +1,10 @@
 import Home from './components/Home';
 import About from './components/About';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import Contact from './components/Contact';
+import Projects from './components/Projects';
+import Experience from './components/Experience';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Experience />
       <Projects />
       <Contact />
+      <Footer />
     </>
   );
 };
