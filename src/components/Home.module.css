@@ -32,7 +32,7 @@
     }
 }
 
-@media screen and (min-height: 1000px) {
+@media screen and (min-height: 800px) {
     .imgDiv {
         min-height: min-content;
     }
