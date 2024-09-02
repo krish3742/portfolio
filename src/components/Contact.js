@@ -2,11 +2,14 @@ import { useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import Style from './Contact.module.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Contact(props) {
     const initialValues = {uname: "", email: "", message: ""};
     const [formValues, setFormValues] = useState(initialValues);
     const [formErrors, setFormErrors] = useState(initialValues);
+    const notify = (message) => toast.error(message);
     const handleChange = (e) => {
         const {name, value} = e.target;
         setFormValues({...formValues, [name]: value});
@@ -25,6 +28,13 @@ function Contact(props) {
         }
         if(!values.message) {
             errors.message = "Message is required!";
+        }
+        if(errors?.uname) {
+            notify(errors?.uname);
+        } else if(errors?.email) {
+            notify(errors?.email);
+        } else {
+            notify(errors?.message);
         }
         return errors;
     }
@@ -74,17 +84,14 @@ function Contact(props) {
                             <div>
                                 <label htmlFor='Name'></label>
                                 <input type='text' name='uname' placeholder='Your name' className={Style.input} value={formValues.uname} onChange={handleChange}></input>
-                                <p className='mx-6 text-red-600 font-semibold pt-1'>{formErrors?.uname}</p>
                             </div>
                             <div>
                                 <label htmlFor='Email'></label>
                                 <input type='text' name='email' placeholder='Your email' className={Style.input} value={formValues.email} onChange={handleChange}></input>
-                                <p className='mx-6 text-red-600 font-semibold pt-1'>{formErrors?.email}</p>
                             </div>
                             <div>
                                 <label htmlFor='Message'></label>
                                 <textarea type='text' name='message' rows={6} placeholder='Your message' className={Style.textarea} value={formValues.message} onChange={handleChange}></textarea>
-                                <p className='mx-6 text-red-600 font-semibold pt-1'>{formErrors?.message}</p>
                             </div>
                             <div>
                                 <button className={Style.button}>Submit</button>
@@ -93,6 +100,7 @@ function Contact(props) {
                     </div>
                 </div>
             </div>
+            <ToastContainer className={Style.error}/>
         </>
     );
 };

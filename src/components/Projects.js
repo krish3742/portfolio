@@ -1,7 +1,7 @@
-function Projects() {
+function Projects(props) {
     return (
         <>
-            <div>
+            <div ref={props.project}>
                 I'm project
             </div>
         </>
