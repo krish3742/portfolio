@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
+import ScrollToTop from './components/ScrollToTop';
 import { useRef } from 'react';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <Projects project={project}/>
       <Contact contact={contact}/>
       <Footer />
+      <ScrollToTop />
     </>
   );
 };
