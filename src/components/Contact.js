@@ -32,7 +32,7 @@ function Contact() {
     }
     useEffect(() => {
         if(Object.keys(formErrors).length === 0) {
-            console.log('hey');
+            setFormValues(initialValues);
         }
     }, [formErrors]);
     return (
@@ -59,7 +59,7 @@ function Contact() {
                             <div>
                                 <label htmlFor='Message'></label>
                                 <textarea type='text' name='message' rows={6} placeholder='Your message' className={Style.textarea} value={formValues.message} onChange={handleChange}></textarea>
-                                <p className='mx-6 text-red-600 font-medium pt-1'>{formErrors?.message}</p>
+                                <p className='mx-6 text-red-600 font-semibold pt-1'>{formErrors?.message}</p>
                             </div>
                             <div>
                                 <button className={Style.button}>Submit</button>
