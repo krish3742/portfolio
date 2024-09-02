@@ -40,16 +40,23 @@ function Contact(props) {
         }, {
             publicKey: 'K_qZ4gdVuX6M76opX'
         });
-        console.log(result);
-    }
-    useEffect(() => {
-        if(Object.keys(formErrors).length === 0) {
-            sendEmail();
+        if(result?.status === 200) {
             Swal.fire({
                 title: "Success!",
                 text: "Email sent successfully!",
                 icon: "success"
             });
+        } else {
+            Swal.fire({
+                title: "Oops...",
+                text: "Email not sent!",
+                icon: "error"
+            });
+        };
+    }
+    useEffect(() => {
+        if(Object.keys(formErrors).length === 0) {
+            sendEmail();
             setFormValues(initialValues);
         }
     }, [formErrors]);
