@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 import Style from './Contact.module.css';
 
 function Contact(props) {
@@ -26,12 +28,28 @@ function Contact(props) {
         }
         return errors;
     }
-    const handleSubmit = (e) => {
+    const onSubmit = (e) => {
         e.preventDefault();
         setFormErrors(validate(formValues));
     }
+    const sendEmail = async () => {
+        const result = await emailjs.send("service_tkbymwc", "template_2ykc3kl", {
+            uname: formValues.uname,
+            email: formValues.email,
+            message: formValues.message
+        }, {
+            publicKey: 'K_qZ4gdVuX6M76opX'
+        });
+        console.log(result);
+    }
     useEffect(() => {
         if(Object.keys(formErrors).length === 0) {
+            sendEmail();
+            Swal.fire({
+                title: "Success!",
+                text: "Email sent successfully!",
+                icon: "success"
+            });
             setFormValues(initialValues);
         }
     }, [formErrors]);
@@ -45,7 +63,7 @@ function Contact(props) {
                         <p className={Style.para}>Send me a email!</p>
                     </div>
                     <div className={Style.secondContainers}>
-                        <form className={Style.form} onSubmit={(e) => handleSubmit(e)}>
+                        <form className={Style.form} onSubmit={(e) => onSubmit(e)}>
                             <div>
                                 <label htmlFor='Name'></label>
                                 <input type='text' name='uname' placeholder='Your name' className={Style.input} value={formValues.uname} onChange={handleChange}></input>
