@@ -1,6 +1,6 @@
 import Style from './Home.module.css';
 
-function Home() {
+function Home(props) {
     const handleDownloadResumeClick = (evt) => {
         evt.preventDefault();
         const pdfUrl = require('../documents/Resume.pdf');
@@ -13,7 +13,7 @@ function Home() {
     };
     return (
         <>
-            <div className={Style.heroContainer}>
+            <div ref={props.home} className={Style.heroContainer}>
                 <div className="relative isolate w-screen flex items-center justify-center">
                     <div aria-hidden="true" className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
                         <div

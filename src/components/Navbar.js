@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Navbar() {
+function Navbar(props) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
         <>
@@ -25,15 +25,15 @@ function Navbar() {
                             </div>
                             <div className="hidden sm:ml-6 sm:block">
                                 <div className="flex space-x-4">
-                                    <a href="google.com" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" aria-current="page">Home</a>
-                                    <a href="google.com" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About Me</a>
-                                    <a href="google.com" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Education & Experience</a>
-                                    <a href="google.com" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+                                    <button onClick={() => props.scrollToSection(props.home)} className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Home</button>
+                                    <button onClick={() => props.scrollToSection(props.about)} className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About Me</button>
+                                    <button onClick={() => props.scrollToSection(props.edex)} className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Education & Experience</button>
+                                    <button onClick={() => props.scrollToSection(props.project)} className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</button>
                                 </div>
                             </div>
                             <div className="hidden sm:ml-6 sm:block">
                                 <div className="flex space-x-4">
-                                    <a href="google.com" className="rounded-md bg-[#FFFFFF] px-3 py-2 text-sm font-medium text-[#291C3A]" aria-current="page">Contact Me</a>
+                                    <button onClick={() => props.scrollToSection(props.contact)} className="rounded-md bg-[#FFFFFF] px-3 py-2 text-sm font-medium text-[#291C3A]" aria-current="page">Contact Me</button>
                                 </div>
                             </div>
                         </div>
@@ -42,11 +42,11 @@ function Navbar() {
                 {isMenuOpen &&
                     <div className="sm:hidden" id="mobile-menu">
                         <div className="space-y-1 px-2 pb-3 pt-2">
-                            <a href="google.com" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
-                            <a href="google.com" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About Me</a>
-                            <a href="google.com" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Education & Experience</a>
-                            <a href="google.com" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-                            <a href="google.com" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Me</a>
+                            <button onClick={() => {props.scrollToSection(props.home);setIsMenuOpen(!isMenuOpen)}} className="block rounded-md px-3 py-2 text-base font-medium min-w-full text-left text-gray-300 hover:bg-gray-700 hover:text-white">Home</button>
+                            <button onClick={() => {props.scrollToSection(props.about);setIsMenuOpen(!isMenuOpen)}} className="block rounded-md px-3 py-2 text-base font-medium min-w-full text-left text-gray-300 hover:bg-gray-700 hover:text-white">About Me</button>
+                            <button onClick={() => {props.scrollToSection(props.edex);setIsMenuOpen(!isMenuOpen)}} className="block rounded-md px-3 py-2 text-base font-medium min-w-full text-left text-gray-300 hover:bg-gray-700 hover:text-white">Education & Experience</button>
+                            <button onClick={() => {props.scrollToSection(props.project);setIsMenuOpen(!isMenuOpen)}} className="block rounded-md px-3 py-2 text-base font-medium min-w-full text-left text-gray-300 hover:bg-gray-700 hover:text-white">Projects</button>
+                            <button onClick={() => {props.scrollToSection(props.contact);setIsMenuOpen(!isMenuOpen)}} className="block rounded-md px-3 py-2 text-base font-medium min-w-full text-left text-gray-300 hover:bg-gray-700 hover:text-white">Contact Me</button>
                         </div>
                     </div>
                 }

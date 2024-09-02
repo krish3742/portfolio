@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Style from './Contact.module.css';
 
-function Contact() {
+function Contact(props) {
     const initialValues = {uname: "", email: "", message: ""};
     const [formValues, setFormValues] = useState(initialValues);
     const [formErrors, setFormErrors] = useState(initialValues);
@@ -37,7 +37,7 @@ function Contact() {
     }, [formErrors]);
     return (
         <>
-            <div className={Style.contactContainer}>
+            <div ref={props.contact} className={Style.contactContainer}>
                 <div className={Style.container}>
                     <div className={Style.firstContainers}>
                         <h1 className={Style.heading}>Let's discuss</h1>

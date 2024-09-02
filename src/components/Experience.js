@@ -1,9 +1,9 @@
 import Style from './Experience.module.css';
 
-function Experience() {
+function Experience(props) {
     return (
         <>
-            <div className={Style.experienceContainer}>
+            <div ref={props.edex} className={Style.experienceContainer}>
                 <div className={Style.container}>
                     <div className={Style.firstContainers}>
                         <h1 className={Style.heading}>Education & Experience</h1>

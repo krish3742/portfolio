@@ -1,10 +1,10 @@
 import { MdOutlineLocalFireDepartment } from "react-icons/md";
 import Style from './About.module.css';
 
-function About() {
+function About(props) {
     return (
         <>
-            <div className={Style.container}>
+            <div ref={props.about} className={Style.container}>
                 <div className={Style.firstContainers}>
                     <h1 className={Style.heading}>About Me</h1>
                 </div>
