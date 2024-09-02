@@ -53,11 +53,11 @@ function Contact(props) {
                 icon: "error"
             });
         };
+        setFormValues(initialValues);
     }
     useEffect(() => {
         if(Object.keys(formErrors).length === 0) {
             sendEmail();
-            setFormValues(initialValues);
         }
     }, [formErrors]);
     return (
