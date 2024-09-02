@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import Home from './components/Home';
 import About from './components/About';
 import Footer from './components/Footer';
@@ -6,7 +7,6 @@ import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import ScrollToTop from './components/ScrollToTop';
-import { useRef } from 'react';
 
 function App() {
   const home = useRef(null);

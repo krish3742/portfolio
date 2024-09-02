@@ -1,6 +1,6 @@
+import { useEffect, useState } from "react";
 import { FaAngleDoubleUp } from "react-icons/fa";
 import Style from './ScrollToTop.module.css';
-import { useEffect, useState } from "react";
 
 function ScrollToTop() {
     const [showScrollTopButton, setScrollTopButton] = useState(false);
