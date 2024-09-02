@@ -77,7 +77,7 @@ function Contact(props) {
                     <div className={Style.firstContainers}>
                         <h1 className={Style.heading}>Let's discuss</h1>
                         <h1 className={Style.heading}>on something <span className='text-[#a8107c]'>cool</span> together</h1>
-                        <p className={Style.para}>Send me a email!</p>
+                        <p className={Style.para}>Send me an email!</p>
                     </div>
                     <div className={Style.secondContainers}>
                         <form className={Style.form} onSubmit={(e) => onSubmit(e)}>

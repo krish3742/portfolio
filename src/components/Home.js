@@ -31,7 +31,7 @@ function Home(props) {
                                     Hello 👋,
                                 </p>
                                 <p className="text-7xl leading-11 font-bold text-[#8121D0] lg:text-8xl">
-                                    I'm a web Developer
+                                    I'm a Web Developer
                                 </p>
                                 <p className="my-4 text-2xl leading-20 font-bold text-white tracking-wide">
                                     I build things for web 
