@@ -1,0 +1,134 @@
+.container {
+    background-color: #E1EBED;
+    min-height: calc(100vh - 64px);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 2%;
+    gap: 1rem;
+}
+
+.firstContainers {
+    width: 85%;
+}
+
+.heading {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #291C3A;
+}
+
+.secondContainers {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+    gap: 1rem;
+}
+
+.project {
+    width: 21rem;
+    height: 26rem;
+    background-color: #DCCFED;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+}
+
+.imgDiv {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img {
+    height: 15rem;
+    width: 20rem;
+    background-image: url('../documents/Project.jpeg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.project:hover {
+    .img {
+	    animation: rotate 2s ease-in-out 1;
+        border-radius: 10px;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(60deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+.projectHeading {
+    width: fit-content;
+    font-weight: 500;
+    font-size: large;
+}
+
+.stackDiv {
+    width: 95%;
+    display: flex;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.projectPara {
+    width: 95%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.buttonDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.button {
+    background-color: #291C3A;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    color: #291C3A;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1279px) {
+    .heading {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .secondContainers {
+        margin-bottom: 3.5%;
+    }
+}
+
+@media screen and (min-height: 800px) {
+    .container {
+        min-height: max-content;
+    }
+}
