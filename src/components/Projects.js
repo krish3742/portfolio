@@ -3,10 +3,10 @@ import Style from './Projects.module.css';
 function Projects(props) {
     const myProject = [
         {id: 1, name: 'Quizzard - A Quiz Manager', description: 'Developed a Quiz Manager app for seamless quiz creation, editing, publishing, and analysis capabilities.', stack: 'MERN Stack, Tailwind', code: 'https://github.com/krish3742/HostedProjects/tree/main/Quizzard', live: 'https://quizzard-acwk.onrender.com/'},
-        {id: 2, name: 'Tic-Tac-Toe', description: 'Developed a Tic-Tac-Toe game, allowing users to play and track their moves in real-time.', stack: 'React', code: 'https://github.com/krish3742/TriwebAPI-Learning/tree/main/Projects/Tic_Tac_Toe/tic_tac_toe', live: 'b2'},
+        {id: 2, name: 'Tic-Tac-Toe', description: 'Developed a Tic-Tac-Toe game, allowing users to play and track their moves in real-time.', stack: 'React', code: 'https://github.com/krish3742/TriwebAPI-Learning/tree/main/Projects/Tic_Tac_Toe/tic_tac_toe', live: 'https://tictactoe-kshitij.vercel.app/'},
         {id: 3, name: 'Drawing App', description: 'Developed a drawing playground, allowing users to select different colors, draw, erase and reset.', stack: 'Vanilla JS', code: 'https://github.com/krish3742/Mini-Projects/tree/main/Drawing_App', live: 'https://drawing-app-chi-brown.vercel.app/'},
         {id: 4, name: 'Portfolio Website', description: 'Developed a portfolio website, allowing users to view my introduction, skills, download resume, and contact me.', stack: 'React, Tailwind', code: 'https://github.com/krish3742/portfolio', live: 'https://kshitijcodes.onrender.com/'},
-        {id: 5, name: 'TO-DO App', description: 'Developed a To-Do app, allowing users to set task, hold task, remove task, add task to favorites.', stack: 'MERN Stack', code: 'https://github.com/krish3742/TriwebAPI-Learning/tree/main/Projects/MERN%20Todo%20App', live: 'https://drawing-app-chi-brown.vercel.app/'}
+        {id: 5, name: 'TO-DO App', description: 'Developed a To-Do app, allowing users to set task, hold task, remove task, add task to favorites.', stack: 'MERN Stack', code: 'https://github.com/krish3742/TriwebAPI-Learning/tree/main/Projects/MERN%20Todo%20App', live: 'https://to-do-kshitijcodes.onrender.com/'}
     ];
     return (
         <>
