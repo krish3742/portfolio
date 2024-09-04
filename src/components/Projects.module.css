@@ -55,6 +55,7 @@
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
+    border-radius: 10px;
 }
 
 .project:hover {
