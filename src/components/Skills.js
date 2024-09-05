@@ -95,6 +95,14 @@ function Skills(props) {
                                 <p className={Style.para}>GitHub</p>
                             </div>
                             <div className={Style.skillsDiv}>    
+                                <img className="h-8 w-auto bg-cover" src={require('../documents/Yarn.png')} alt="Yarn" />
+                                <p className={Style.para}>Yarn</p>
+                            </div>
+                            <div className={Style.skillsDiv}>    
+                                <img className="h-8 w-auto bg-cover" src={require('../documents/NPM.png')} alt="NPM" />
+                                <p className={Style.para}>NPM</p>
+                            </div>
+                            <div className={Style.skillsDiv}>    
                                 <img className="h-8 w-auto bg-cover" src={require('../documents/VSCode.png')} alt="VS Code" />
                                 <p className={Style.para}>VS Code</p>
                             </div>
@@ -107,16 +115,8 @@ function Skills(props) {
                                 <p className={Style.para}>Postman</p>
                             </div>
                             <div className={Style.skillsDiv}>    
-                                <img className="h-8 w-auto bg-cover" src={require('../documents/NPM.png')} alt="NPM" />
-                                <p className={Style.para}>NPM</p>
-                            </div>
-                            <div className={Style.skillsDiv}>    
-                                <img className="h-8 w-auto bg-cover" src={require('../documents/Yarn.png')} alt="Yarn" />
-                                <p className={Style.para}>Yarn</p>
-                            </div>
-                            <div className={Style.skillsDiv}>    
                                 <img className="h-8 w-auto bg-cover" src={require('../documents/Photoshop.png')} alt="Photoshop" />
-                                <p className={Style.para}>Adobe Photoshop</p>
+                                <p className={Style.para}>Photoshop</p>
                             </div>
                         </div>
                     </div>
