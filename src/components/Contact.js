@@ -72,32 +72,30 @@ function Contact(props) {
     }, [formErrors]);
     return (
         <>
-            <div ref={props.contact} className={Style.contactContainer}>
-                <div className={Style.container}>
-                    <div className={Style.firstContainers}>
-                        <h1 className={Style.heading}>Let's discuss</h1>
-                        <h1 className={Style.heading}>on something <span className='text-[#a8107c]'>cool</span> together</h1>
-                        <p className={Style.para}>Send me an email!</p>
-                    </div>
-                    <div className={Style.secondContainers}>
-                        <form className={Style.form} onSubmit={(e) => onSubmit(e)}>
-                            <div>
-                                <label htmlFor='Name'></label>
-                                <input type='text' name='uname' placeholder='Your name' className={Style.input} value={formValues.uname} onChange={handleChange}></input>
-                            </div>
-                            <div>
-                                <label htmlFor='Email'></label>
-                                <input type='text' name='email' placeholder='Your email' className={Style.input} value={formValues.email} onChange={handleChange}></input>
-                            </div>
-                            <div>
-                                <label htmlFor='Message'></label>
-                                <textarea type='text' name='message' rows={6} placeholder='Your message' className={Style.textarea} value={formValues.message} onChange={handleChange}></textarea>
-                            </div>
-                            <div>
-                                <button className={Style.button}>Submit</button>
-                            </div>
-                        </form>
-                    </div>
+            <div ref={props.contact} className={Style.container}>
+                <div className={Style.firstContainers}>
+                    <h1 className={Style.heading}>Let's discuss</h1>
+                    <h1 className={Style.heading}>on something <span className='text-[#a8107c]'>cool</span> together</h1>
+                    <p className={Style.para}>Send me an email!</p>
+                </div>
+                <div className={Style.secondContainers}>
+                    <form className={Style.form} onSubmit={(e) => onSubmit(e)}>
+                        <div>
+                            <label htmlFor='Name'></label>
+                            <input type='text' name='uname' placeholder='Your name' className={Style.input} value={formValues.uname} onChange={handleChange}></input>
+                        </div>
+                        <div>
+                            <label htmlFor='Email'></label>
+                            <input type='text' name='email' placeholder='Your email' className={Style.input} value={formValues.email} onChange={handleChange}></input>
+                        </div>
+                        <div>
+                            <label htmlFor='Message'></label>
+                            <textarea type='text' name='message' rows={6} placeholder='Your message' className={Style.textarea} value={formValues.message} onChange={handleChange}></textarea>
+                        </div>
+                        <div>
+                            <button className={Style.button}>Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
             <ToastContainer className={Style.error}/>

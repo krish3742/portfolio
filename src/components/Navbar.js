@@ -28,6 +28,7 @@ function Navbar(props) {
                                     <button onClick={() => props.scrollToSection(props.home)} className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Home</button>
                                     <button onClick={() => props.scrollToSection(props.about)} className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About Me</button>
                                     <button onClick={() => props.scrollToSection(props.edex)} className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Education & Experience</button>
+                                    <button onClick={() => props.scrollToSection(props.skills)} className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Skills</button>
                                     <button onClick={() => props.scrollToSection(props.project)} className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</button>
                                 </div>
                             </div>
@@ -45,6 +46,7 @@ function Navbar(props) {
                             <button onClick={() => {props.scrollToSection(props.home);setIsMenuOpen(!isMenuOpen)}} className="block rounded-md px-3 py-2 text-base font-medium min-w-full text-left text-gray-300 hover:bg-gray-700 hover:text-white">Home</button>
                             <button onClick={() => {props.scrollToSection(props.about);setIsMenuOpen(!isMenuOpen)}} className="block rounded-md px-3 py-2 text-base font-medium min-w-full text-left text-gray-300 hover:bg-gray-700 hover:text-white">About Me</button>
                             <button onClick={() => {props.scrollToSection(props.edex);setIsMenuOpen(!isMenuOpen)}} className="block rounded-md px-3 py-2 text-base font-medium min-w-full text-left text-gray-300 hover:bg-gray-700 hover:text-white">Education & Experience</button>
+                            <button onClick={() => {props.scrollToSection(props.skills);setIsMenuOpen(!isMenuOpen)}} className="block rounded-md px-3 py-2 text-base font-medium min-w-full text-left text-gray-300 hover:bg-gray-700 hover:text-white">Skills</button>
                             <button onClick={() => {props.scrollToSection(props.project);setIsMenuOpen(!isMenuOpen)}} className="block rounded-md px-3 py-2 text-base font-medium min-w-full text-left text-gray-300 hover:bg-gray-700 hover:text-white">Projects</button>
                             <button onClick={() => {props.scrollToSection(props.contact);setIsMenuOpen(!isMenuOpen)}} className="block rounded-md px-3 py-2 text-base font-medium min-w-full text-left text-gray-300 hover:bg-gray-700 hover:text-white">Contact Me</button>
                         </div>

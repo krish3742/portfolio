@@ -10,30 +10,32 @@ function Projects(props) {
     ];
     return (
         <>
-            <div ref={props.project} className={Style.container}>
-                <div className={Style.firstContainers}>
-                    <h1 className={Style.heading}>My Projects</h1>
-                </div>
-                <div className={Style.secondContainers}>
-                    {myProject.map((project) => {
-                        return (
-                            <div className={Style.project} key={project.id}>
-                                <div className={Style.imgDiv}>
-                                    <div className={Style.img}/>
+            <div ref={props.project} className={Style.projectContainer}>
+                <div className={Style.container}>
+                    <div className={Style.firstContainers}>
+                        <h1 className={Style.heading}>My Projects</h1>
+                    </div>
+                    <div className={Style.secondContainers}>
+                        {myProject.map((project) => {
+                            return (
+                                <div className={Style.project} key={project.id}>
+                                    <div className={Style.imgDiv}>
+                                        <div className={Style.img}/>
+                                    </div>
+                                    <h3 className={Style.projectHeading}>{project.name}</h3>
+                                    <div className={Style.stackDiv}>
+                                        <p className='font-semibold pr-2'>Tech Stack:</p>
+                                        <p> {project.stack}</p>
+                                    </div>
+                                    <p className={Style.projectPara}>{project.description}</p>
+                                    <div className={Style.buttonDiv}>
+                                        <button className={Style.button} onClick={() => window.open(project.code, '_blank')}>View Code</button>
+                                        <button className={Style.button} onClick={() => window.open(project.live, '_blank')}>View Website</button>
+                                    </div>
                                 </div>
-                                <h3 className={Style.projectHeading}>{project.name}</h3>
-                                <div className={Style.stackDiv}>
-                                    <p className='font-semibold pr-2'>Tech Stack:</p>
-                                    <p> {project.stack}</p>
-                                </div>
-                                <p className={Style.projectPara}>{project.description}</p>
-                                <div className={Style.buttonDiv}>
-                                    <button className={Style.button} onClick={() => window.open(project.code, '_blank')}>View Code</button>
-                                    <button className={Style.button} onClick={() => window.open(project.live, '_blank')}>View Website</button>
-                                </div>
-                            </div>
-                        );
-                    })}
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
         </>

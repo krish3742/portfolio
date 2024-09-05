@@ -1,20 +1,10 @@
-.contactContainer {
-    background-color: #E1EBED;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: max-content;
-}
-
 .container {
-    background-color: #DCCFED;
-    width: 98.5%;
+    background-color: #E1EBED;
     min-height: max-content;
     display: flex;
     justify-content: center;
     padding-top: 2%;
     gap: 2rem;
-    margin-bottom: 15px;
 }
 
 .firstContainers {
