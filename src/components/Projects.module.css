@@ -54,6 +54,7 @@
 .imgDiv {
     overflow: hidden;
     border-radius: 10px;
+    z-index: 10;
 }
 
 .img {
@@ -116,12 +117,14 @@
     border-radius: 5px;
     color: white;
     cursor: pointer;
+    border: transparent solid 1px;
 }
 
 .button:hover {
-    background-color: white;
+    background-color: #DCCFED;
     color: #291C3A;
     font-weight: 500;
+    border: #291C3A solid 1px;
 }
 
 @media screen and (max-width: 1279px) {
@@ -139,5 +142,14 @@
 @media screen and (min-height: 800px) {
     .container {
         min-height: max-content;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .project {
+        width: 100%;
+    }
+    .img {
+        width: 18.5rem;
     }
 }
