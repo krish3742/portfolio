@@ -35,7 +35,7 @@ function Experience(props) {
                                     <p className={Style.years}>2016 - 2017</p>
                                     <h4 className='font-bold min-w-full'>High School</h4>
                                     <p>ICSE Board</p>
-                                    <p>PCM - 75%</p>
+                                    <p>PCMB - 75%</p>
                                 </div>
                             </div>
                         </div>
