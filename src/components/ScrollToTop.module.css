@@ -13,4 +13,5 @@
     cursor: pointer;
     font-size: x-large;
     color: white;
+    z-index: 20;
 }
