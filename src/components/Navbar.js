@@ -19,7 +19,7 @@ function Navbar(props) {
                                 </svg>
                             </button>
                         </div>
-                        <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between sm:overflow-hidden">
+                        <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
                             <div className="flex items-center justify-center text-lg font-bold">
                                 <p className="text-white">KA</p>
                             </div>
