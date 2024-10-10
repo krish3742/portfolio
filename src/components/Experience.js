@@ -49,7 +49,7 @@ function Experience(props) {
                             <div className={Style.contentDiv}>
                                 <div className={Style.mernContent}>
                                     <p className={Style.years}>2024 - Present</p>
-                                    <h4 className='font-bold'>Triweb API</h4>
+                                    <h4 className='font-bold'>SinQlarity</h4>
                                     <p className='min-w-full'>MERN Stack Developer</p>
                                     <p className={Style.para}>Gained proficiency in MERN Stack through hands-on project learning.</p>
                                 </div>
