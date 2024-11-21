@@ -1,11 +1,19 @@
-.container {
+.skillsContainer {
   background-color: #e1ebed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 98.5%;
+  background-color: #dccfed;
   min-height: calc(100vh - 64px);
   display: flex;
   align-items: center;
-  justify-content: start;
   flex-direction: column;
   padding-top: 2%;
+  padding-bottom: 2%;
   gap: 1rem;
 }
 
@@ -32,7 +40,7 @@
 .skillsContainers {
   width: 90%;
   height: max-content;
-  background-color: #dccfedb7;
+  background-color: #e1ebed;
   border-radius: 10px;
   display: flex;
   align-items: center;

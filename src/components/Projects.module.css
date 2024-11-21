@@ -1,13 +1,5 @@
-.projectContainer {
-  background-color: #e1ebed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .container {
-  width: 98.5%;
-  background-color: #dccfed;
+  background-color: #e1ebed;
   min-height: calc(100vh - 64px);
   display: flex;
   align-items: center;
@@ -40,7 +32,7 @@
 .project {
   width: 21rem;
   height: fit-content;
-  background-color: #e1ebed;
+  background-color: #dccfed;
   border-radius: 10px;
   display: flex;
   flex-direction: column;

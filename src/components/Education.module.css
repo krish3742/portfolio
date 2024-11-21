@@ -1,11 +1,20 @@
-.container {
+.educationContainer {
   background-color: #e1ebed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: #dccfed;
+  width: 98.5%;
   min-height: calc(100vh - 64px);
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 1rem;
   padding-top: 2%;
+  padding-bottom: 2%;
+  gap: 1rem;
 }
 
 .firstContainers {
@@ -22,7 +31,6 @@
   width: 85%;
   height: fit-content;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -44,11 +52,6 @@
 .years {
   line-height: 1rem;
   font-weight: 500;
-}
-
-.para {
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 @media screen and (max-width: 1279px) {
