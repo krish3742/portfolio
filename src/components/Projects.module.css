@@ -1,167 +1,172 @@
 .projectContainer {
-    background-color: #E1EBED;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #e1ebed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-    width: 98.5%;
-    background-color: #DCCFED;
-    min-height: calc(100vh - 64px);
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-direction: column;
-    padding-top: 2%;
-    gap: 1rem;
+  width: 98.5%;
+  background-color: #dccfed;
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  padding-top: 2%;
+  gap: 1rem;
 }
 
 .firstContainers {
-    width: 85%;
+  width: 85%;
 }
 
 .heading {
-    font-size: 2.75rem;
-    font-weight: 700;
-    color: #291C3A;
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #291c3a;
 }
 
 .secondContainers {
-    width: 85%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-bottom: 2%;
-    gap: 1rem;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 2%;
+  gap: 1rem;
 }
 
 .project {
-    width: 21rem;
-    height: 26rem;
-    background-color: #E1EBED;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem;
-	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+  width: 21rem;
+  height: 26rem;
+  background-color: #e1ebed;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 }
 
 .imgDiv {
-    overflow: hidden;
-    border-radius: 10px;
-    z-index: 10;
+  z-index: 10;
+}
+
+.todoimg {
+  height: 11rem;
+  width: 20rem;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .img {
-    height: 15rem;
-    width: 20rem;
-    background-image: url('../documents/Project.jpeg');
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border-radius: 10px;
+  height: 11rem;
+  width: 20rem;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .project:hover {
-    .img {
-	    animation: rotate 2s ease-in-out 1;
-        border-radius: 10px;
-    }
+  .img,
+  .todoimg {
+    animation: rotate 2s ease-in-out 1;
+    border-radius: 10px;
+  }
 }
 
 @keyframes rotate {
-    0% {
-        transform: rotateY(0deg);
-    }
-    50% {
-        transform: rotateY(60deg);
-    }
-    100% {
-        transform: rotateY(0deg);
-    }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(60deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
 }
 
 .projectHeading {
-    width: fit-content;
-    font-weight: 500;
-    font-size: large;
+  width: fit-content;
+  font-weight: 500;
+  font-size: large;
 }
 
 .stackDiv {
-    width: 95%;
-    display: flex;
-    text-align: justify;
-    text-justify: inter-word;
+  width: 95%;
+  display: flex;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .projectPara {
-    width: 95%;
-    text-align: justify;
-    text-justify: inter-word;
+  width: 95%;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .buttonDiv {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
 }
 
 .button {
-    background-color: #291C3A;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    border: transparent solid 1px;
+  background-color: #291c3a;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  border: transparent solid 1px;
 }
 
 .button:hover {
-    background-color: #DCCFED;
-    color: #291C3A;
-    font-weight: 500;
-    border: #291C3A solid 1px;
+  background-color: #dccfed;
+  color: #291c3a;
+  font-weight: 500;
+  border: #291c3a solid 1px;
 }
 
 @media screen and (max-width: 1279px) {
-    .heading {
-        font-size: 2.5rem;
-    }
+  .heading {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
-    .secondContainers {
-        margin-bottom: 3.5%;
-    }
+  .secondContainers {
+    margin-bottom: 3.5%;
+  }
 }
 
 @media screen and (min-height: 800px) {
-    .container {
-        min-height: max-content;
-    }
+  .container {
+    min-height: max-content;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .project {
-        width: 100%;
-    }
-    .img {
-        width: 18.5rem;
-    }
+  .project {
+    width: 100%;
+  }
+  .img {
+    width: 18.5rem;
+  }
 }
 
 @media screen and (max-width: 370px) {
-    .img {
-        width: 17.5rem;
-    }
+  .img {
+    width: 17.5rem;
+  }
 }
 
 @media screen and (max-width: 355px) {
-    .img {
-        width: 17rem;
-    }
+  .img {
+    width: 17rem;
+  }
 }
