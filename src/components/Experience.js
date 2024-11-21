@@ -9,21 +9,39 @@ function Experience(props) {
         </div>
         <div className={Style.secondContainers}>
           <div className={Style.content}>
-            <p className={Style.years}>2024 - Present</p>
-            <h4 className="font-bold">SinQlarity</h4>
-            <p className="min-w-full">MERN Stack Developer</p>
-            <p className={Style.para}>
-              Gained proficiency in MERN Stack through hands-on project
-              learning.
-            </p>
+            <h4 className="font-bold">
+              Web Development Intern,{" "}
+              <span className={Style.para}>Triweb Genesis Pvt. Ltd.</span>
+            </h4>
+            <p className={Style.years}>May 2024 - November 2024</p>
+            <ul className={Style.listpara}>
+              <li className={Style.list}>
+                Developed and maintained responsive web applications using the
+                MERN stack, ensuring seamless functionality and smooth user
+                experiences.
+              </li>
+              <li className={Style.list}>
+                Contributed to an open-source GitHub repository by developing
+                new features, resolving issues, and enhancing overall project
+                functionality.
+              </li>
+              <li className={Style.list}>
+                Collaborated with a team using Git and GitHub for version
+                control and conducted code reviews to maintain a clean,
+                organized codebase.
+              </li>
+            </ul>
           </div>
           <div className={Style.content}>
+            <h4 className="font-bold">
+              Club Member, <span className={Style.para}>TechnoJam</span>
+            </h4>
             <p className={Style.years}>2021 - 2023</p>
-            <h4 className="font-bold">TechnoJam</h4>
-            <p>Club Member</p>
-            <p className={Style.para}>
-              Paricipated and conducted several hackathons at college level.
-            </p>
+            <ul className={Style.listpara}>
+              <li>
+                Paricipated and conducted several hackathons at college level.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
