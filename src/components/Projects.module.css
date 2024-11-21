@@ -39,7 +39,7 @@
 
 .project {
   width: 21rem;
-  height: 26rem;
+  height: fit-content;
   background-color: #e1ebed;
   border-radius: 10px;
   display: flex;
@@ -100,8 +100,15 @@
 .stackDiv {
   width: 95%;
   display: flex;
+  flex-wrap: wrap;
   text-align: justify;
   text-justify: inter-word;
+}
+
+.stacks {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
 }
 
 .projectPara {

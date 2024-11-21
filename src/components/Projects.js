@@ -80,8 +80,10 @@ function Projects(props) {
                   </div>
                   <h3 className={Style.projectHeading}>{project.name}</h3>
                   <div className={Style.stackDiv}>
-                    <p className="font-semibold pr-2">Tech Stack:</p>
-                    <p> {project.stack}</p>
+                    <p className="font-semibold pr-2">
+                      Tech Stack:{" "}
+                      <span className={Style.stacks}>{project.stack}</span>
+                    </p>
                   </div>
                   <p className={Style.projectPara}>{project.description}</p>
                   <div className={Style.buttonDiv}>
