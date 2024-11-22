@@ -117,38 +117,6 @@ function Skills(props) {
               <div className={Style.skillsDiv}>
                 <img
                   className="h-8 w-auto bg-cover"
-                  src={require("../documents/GitHub.png")}
-                  alt="GitHub"
-                />
-                <p className={Style.para}>GitHub</p>
-              </div>
-              <div className={Style.skillsDiv}>
-                <img
-                  className="h-8 w-auto bg-cover"
-                  src={require("../documents/Yarn.png")}
-                  alt="Yarn"
-                />
-                <p className={Style.para}>Yarn</p>
-              </div>
-              <div className={Style.skillsDiv}>
-                <img
-                  className="h-8 w-auto bg-cover"
-                  src={require("../documents/NPM.png")}
-                  alt="NPM"
-                />
-                <p className={Style.para}>NPM</p>
-              </div>
-              <div className={Style.skillsDiv}>
-                <img
-                  className="h-8 w-auto bg-cover"
-                  src={require("../documents/VSCode.png")}
-                  alt="VS Code"
-                />
-                <p className={Style.para}>VS Code</p>
-              </div>
-              <div className={Style.skillsDiv}>
-                <img
-                  className="h-8 w-auto bg-cover"
                   src={require("../documents/Jira.png")}
                   alt="Jira"
                 />
