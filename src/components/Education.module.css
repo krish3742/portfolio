@@ -59,6 +59,14 @@
   font-weight: normal;
 }
 
+.listpara {
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+  list-style-type: disc;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 @media screen and (max-width: 1279px) {
   .container {
     gap: 0.75rem;
