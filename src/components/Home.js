@@ -54,7 +54,7 @@ function Home(props) {
                     alt="Linkedin"
                     onClick={() =>
                       window.open(
-                        "https://www.linkedin.com/in/kshitij-agrawal2002/",
+                        "https://www.linkedin.com/in/kshitij-agrawal-864528208/",
                         "_blank"
                       )
                     }
