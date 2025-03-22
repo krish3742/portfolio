@@ -122,7 +122,7 @@ const StatCard = memo(
 const AboutPage = () => {
   const handleDownloadResumeClick = (evt) => {
     evt.preventDefault();
-    const pdfUrl = "../assets/Resume.pdf";
+    const pdfUrl = "../../Resume.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "Kshitij Agrawal Resume.pdf";
