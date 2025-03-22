@@ -3,11 +3,11 @@
 Hello everyone!  
 I'm **Kshitij Agrawal**, and I'm excited to share my portfolio website with you!
 
-### 🌐 Live Website:
+### Live Website:
 
 [Portfolio Website](https://kshitijcodes.vercel.app/)
 
-## 🛠 Tech Stack Used:
+## Tech Stack Used:
 
 - **React.js**
 - **Tailwind CSS**
@@ -20,7 +20,7 @@ I'm **Kshitij Agrawal**, and I'm excited to share my portfolio website with you!
 
 ## How to Run This Project
 
-### 📋 Prerequisites
+### Prerequisites
 
 Ensure you have the following installed:
 
