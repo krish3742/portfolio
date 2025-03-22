@@ -1,0 +1,82 @@
+[
+  {
+    "Title": "Quizzard",
+    "Description": "Quizzard is a dynamic and user-friendly quiz management application developed using the MERN stack with TypeScript. The platform is designed to streamline the process of creating, managing, and analyzing quizzes for educational institutions, training programs, and corporate environments. With robust authentication, role-based access control, and an intuitive interface, Quizzard empowers administrators to manage content seamlessly while offering users an engaging quiz experience. The application includes a powerful analytics dashboard, providing valuable insights into quiz performance and user progress. The responsive design ensures a consistent experience across all devices.",
+    "Features": [
+      "Secure User Authentication and Authorization with Role-Based Access Control",
+      "Dynamic Quiz Creation and Management for Admins",
+      "Real-Time Performance Analytics and Reporting",
+      "Interactive Quiz-Taking Experience with Instant Feedback",
+      "Responsive Design with an Intuitive User Interface"
+    ],
+    "Github": "https://github.com/krish3742/HostedProjects/tree/main/Quizzard",
+    "Img": "../../Quizzard.jpg",
+    "Link": "https://quizzard-acwk.onrender.com/",
+    "TechStack": [
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "TypeScript",
+      "Bootstrap"
+    ]
+  },
+  {
+    "Title": "Slot Booking System",
+    "Description": "The Slot Booking System is a robust frontend application developed using React, designed to manage and book time slots with precision. It ensures that no two users can book the same slot on the same date, providing a seamless and efficient booking experience. The application offers user-specific slot tracking, persistent state management using Redux Toolkit and Redux Persist, and a modern, responsive interface with Material-UI components. Features like theme toggling, timezone selection, and intuitive slot management options make this app ideal for scheduling and resource management use cases.",
+    "Features": [
+      "User-Specific Slot Tracking with Persistent State",
+      "Global Slot Availability Management to Prevent Double Bookings",
+      "Add, Remove, Copy, and Clear Slot Functionalities",
+      "Responsive UI with Material-UI and Date Pickers",
+      "Timezone Selection for Accurate Slot Display"
+    ],
+    "Github": "https://github.com/krish3742/Zelthy-assignment/tree/main/frontend",
+    "Img": "SlotBookingSystem.jpg",
+    "Link": "https://slot-booking-virid.vercel.app",
+    "TechStack": [
+      "React",
+      "Redux Toolkit",
+      "Redux Persist",
+      "Material-UI",
+      "Notistack"
+    ]
+  },
+  {
+    "Title": "RBAC Dashboard",
+    "Description": "The RBAC Dashboard is a feature-rich application. Built using the MERN stack, this project offers robust Role-Based Access Control (RBAC) capabilities, enabling secure user authentication and management. The application includes a user-friendly interface for admins to register users, manage roles, and enforce permissions effectively. With dynamic role assignment and intuitive admin controls, the dashboard is designed to streamline user management tasks for enterprise applications. The responsive design ensures accessibility across all devices, enhancing both security and usability.",
+    "Features": [
+      "User Registration and Secure Authentication",
+      "Role-Based Access Control (Admin & User roles)",
+      "Admin Privileges to Manage Users and Roles",
+      "Dynamic Role Assignment and Management",
+      "Responsive and Intuitive User Interface"
+    ],
+    "Github": "https://github.com/krish3742/HostedProjects/tree/main/RBAC_Project",
+    "Img": "RBAC.jpg",
+    "Link": "https://kshitij-rbac.onrender.com/",
+    "TechStack": ["MongoDB", "Express.js", "React", "Node.js", "Bootstrap"]
+  },
+  {
+    "Title": "Task Flow Manager",
+    "Description": "Task Flow Manager is a comprehensive task management application built using the MERN stack. The app offers a dynamic and visual approach to task management, with tasks represented as nodes in a flowchart using React Flow. The intuitive interface, developed with React.js and Material-UI, allows users to efficiently create, view, update, and delete tasks. The backend, powered by Express.js and MongoDB, ensures robust CRUD operations and data management. Task Flow Manager is ideal for individuals and teams looking to streamline task management with a visually engaging and responsive platform.",
+    "Features": [
+      "Visual Task Management with React Flow",
+      "CRUD Operations for Task Management",
+      "Intuitive and Responsive User Interface with Material-UI",
+      "Real-Time Snackbar Notifications for Actions",
+      "RESTful API Design with Error Handling"
+    ],
+    "Github": "https://github.com/krish3742/HostedProjects/tree/main/Task%20Flow",
+    "Img": "TaskFlowManager.jpg",
+    "Link": "https://task-flow-manager.onrender.com/",
+    "TechStack": [
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "Material-UI",
+      "React Flow"
+    ]
+  }
+]
