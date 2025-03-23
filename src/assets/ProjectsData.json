@@ -32,7 +32,7 @@
       "Timezone Selection for Accurate Slot Display"
     ],
     "Github": "https://github.com/krish3742/Zelthy-assignment/tree/main/frontend",
-    "Img": "SlotBookingSystem.jpg",
+    "Img": "../../SlotBooking.webp",
     "Link": "https://slot-booking-virid.vercel.app",
     "TechStack": [
       "React",
@@ -53,7 +53,7 @@
       "Responsive and Intuitive User Interface"
     ],
     "Github": "https://github.com/krish3742/HostedProjects/tree/main/RBAC_Project",
-    "Img": "RBAC.jpg",
+    "Img": "../../RBAC.jpeg",
     "Link": "https://kshitij-rbac.onrender.com/",
     "TechStack": ["MongoDB", "Express.js", "React", "Node.js", "Bootstrap"]
   },
@@ -68,7 +68,7 @@
       "RESTful API Design with Error Handling"
     ],
     "Github": "https://github.com/krish3742/HostedProjects/tree/main/Task%20Flow",
-    "Img": "TaskFlowManager.jpg",
+    "Img": "../../TaskManager.jpg",
     "Link": "https://task-flow-manager.onrender.com/",
     "TechStack": [
       "MongoDB",

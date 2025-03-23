@@ -12,7 +12,7 @@ const CardProject = ({ Img, Title, Description, Link: ProjectLink }) => {
             <img
               src={Img}
               alt={Title}
-              className="w-full h-[16rem] object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
+              className="w-full h-[16rem] object-cover object-center transform group-hover:scale-105 transition-transform duration-500 text-white"
             />
           </div>
 
