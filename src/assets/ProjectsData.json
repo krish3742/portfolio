@@ -78,5 +78,36 @@
       "Material-UI",
       "React Flow"
     ]
+  },
+  {
+    "Title": "Drawing App",
+    "Description": "Drawing App is an interactive and minimalist drawing playground developed using Vanilla JavaScript. The application allows users to create digital sketches with a variety of color choices, an eraser tool, and a reset functionality to clear the canvas. The user-friendly interface makes it an engaging tool for creative exploration and quick sketching. Whether for fun or brainstorming ideas, this lightweight web app provides a smooth and responsive drawing experience.",
+    "Features": [
+      "Customizable color selection for drawing",
+      "Eraser tool for modifying sketches",
+      "Reset button to clear the canvas instantly",
+      "Smooth and responsive drawing experience",
+      "Lightweight and efficient with a simple UI"
+    ],
+    "Github": "https://github.com/krish3742/Mini-Projects/tree/main/Drawing_App",
+    "Img": "../../DrawingApp.jpg",
+    "Link": "https://drawing-app-chi-brown.vercel.app/",
+    "TechStack": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "Title": "Meghdoot",
+    "Description": "Meghdoot is a sleek and responsive weather application built using React and Tailwind CSS. The app provides real-time weather updates for the user's current location and allows searching for cities or countries worldwide with smart city suggestions. Featuring a clean and intuitive UI, Meghdoot delivers essential weather details such as temperature, humidity, wind speed, and weather conditions in an easy-to-read format.",
+    "Features": [
+      "Real-time weather updates based on user's current location",
+      "Automatically detects user's current location for instant weather updates",
+      "Search functionality with city suggestions",
+      "Detailed weather insights, including temperature, humidity, and wind speed",
+      "Responsive design for seamless experience across devices",
+      "Built with React and Tailwind CSS for a modern UI"
+    ],
+    "Github": "https://github.com/krish3742/HostedProjects/tree/main/Weather-app",
+    "Img": "../../WeatherApp.png",
+    "Link": "https://meghdoot.onrender.com/",
+    "TechStack": ["React", "Tailwind CSS", "OpenWeather API"]
   }
 ]
