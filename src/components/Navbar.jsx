@@ -61,10 +61,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full top-0 z-50 transition-all duration-500 border-b border-transparent
+      className={`fixed w-full top-0 z-50 transition-all duration-500
       ${
         isOpen
-          ? "opacity-100 bg-[#030014] border-white"
+          ? "opacity-100 bg-[#030014]"
           : scrolled
           ? "backdrop-blur-xl bg-[#030014]/50"
           : ""
@@ -142,7 +142,7 @@ const Navbar = () => {
         }`}
         style={{ top: "64px" }}
       >
-        <div className="flex flex-col h-full">
+        <div className="flex flex-col h-full border-t border-white">
           <div className="container mx-auto px-4 sm:px-6 md:px-10 lg:px-20 py-1 space-y-3 flex-1">
             {navItems.map((item, index) => (
               <button
