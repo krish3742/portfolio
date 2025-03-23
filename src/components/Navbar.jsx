@@ -140,7 +140,7 @@ const Navbar = () => {
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-[-100%] pointer-events-none"
         }`}
-        style={{ top: "64px" }}
+        style={{ top: "64px", backgroundColor: "#030014" }}
       >
         <div className="flex flex-col h-full border-t border-white">
           <div className="container mx-auto px-4 sm:px-6 md:px-10 lg:px-20 py-1 space-y-3 flex-1">

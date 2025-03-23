@@ -95,7 +95,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="px-4 sm:px-6 md:px-10 py-8" id="Contact">
+    <div className="px-4 sm:px-6 md:px-10 py-8 bg-[#030014]" id="Contact">
       <div className="text-center">
         <h2
           data-aos="fade-down"
