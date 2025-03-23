@@ -95,7 +95,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="px-4 sm:px-6 md:px-10 py-8 bg-[#030014]" id="Contact">
+    <div className="px-4 sm:px-6 md:px-10 py-8" id="Contact">
       <div className="text-center">
         <h2
           data-aos="fade-down"
@@ -127,13 +127,7 @@ const ContactPage = () => {
       <div className="h-auto pt-10 flex items-center justify-center">
         <div className="container grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="space-y-6">
-            <div
-              data-aos="fade-left"
-              data-aos-duration="1200"
-              className="bg-white/5 backdrop-blur-xl rounded-3xl p-3 py-8 shadow-2xl transform transition-all duration-300 hover:shadow-[#6366f1]/10"
-            >
-              <SocialLinks />
-            </div>
+            <SocialLinks />
           </div>
 
           <div
