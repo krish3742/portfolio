@@ -1,5 +1,27 @@
 [
   {
+    "Title": "CodexAI",
+    "Description": "CodexAI is an intelligent code assistance platform designed to enhance the development workflow by providing real-time code suggestions, explanations, and debugging support. Built with the MERN stack and powered by AI, CodexAI helps developers write efficient code with minimal errors. The platform integrates seamlessly with popular code editors and offers an intuitive UI for managing code snippets, AI-powered debugging, and performance analysis. Its responsive design delivers a seamless experience across all devices.",
+    "Features": [
+      "AI-Powered Code Suggestions and Auto-Completion",
+      "Real-Time Error Detection and Debugging Support",
+      "Interactive Code Explanations for Better Understanding",
+      "Seamless Integration with Popular Code Editors",
+      "Responsive and User-Friendly Interface"
+    ],
+    "Github": "https://github.com/krish3742/HostedProjects/tree/main/CodexAI",
+    "Img": "../../CodexAI.jpeg",
+    "Link": "https://codexai-ten.vercel.app/",
+    "TechStack": [
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "JavaScript",
+      "Google Gemini API"
+    ]
+  },
+  {
     "Title": "Quizzard",
     "Description": "Quizzard is a dynamic and user-friendly quiz management application developed using the MERN stack with TypeScript. The platform is designed to streamline the process of creating, managing, and analyzing quizzes for educational institutions, training programs, and corporate environments. With robust authentication, role-based access control, and an intuitive interface, Quizzard empowers administrators to manage content seamlessly while offering users an engaging quiz experience. The application includes a powerful analytics dashboard, providing valuable insights into quiz performance and user progress. The responsive design ensures a consistent experience across all devices.",
     "Features": [
