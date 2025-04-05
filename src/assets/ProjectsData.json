@@ -9,7 +9,7 @@
       "Seamless Integration with Popular Code Editors",
       "Responsive and User-Friendly Interface"
     ],
-    "Github": "https://github.com/krish3742/HostedProjects/tree/main/CodexAI",
+    "Github": "https://github.com/krish3742/CodexAI",
     "Img": "../../CodexAI.jpeg",
     "Link": "https://codexai-ten.vercel.app/",
     "TechStack": [
@@ -31,7 +31,7 @@
       "Interactive Quiz-Taking Experience with Instant Feedback",
       "Responsive Design with an Intuitive User Interface"
     ],
-    "Github": "https://github.com/krish3742/HostedProjects/tree/main/Quizzard",
+    "Github": "https://github.com/krish3742/Quizzard",
     "Img": "../../Quizzard.jpg",
     "Link": "https://quizzard-acwk.onrender.com/",
     "TechStack": [
@@ -53,7 +53,7 @@
       "Responsive UI with Material-UI and Date Pickers",
       "Timezone Selection for Accurate Slot Display"
     ],
-    "Github": "https://github.com/krish3742/Zelthy-assignment/tree/main/frontend",
+    "Github": "https://github.com/krish3742/Slot-Booking-System",
     "Img": "../../SlotBooking.webp",
     "Link": "https://slot-booking-virid.vercel.app",
     "TechStack": [
@@ -74,7 +74,7 @@
       "Dynamic Role Assignment and Management",
       "Responsive and Intuitive User Interface"
     ],
-    "Github": "https://github.com/krish3742/HostedProjects/tree/main/RBAC_Project",
+    "Github": "https://github.com/krish3742/RBAC-Dashboard",
     "Img": "../../RBAC.jpeg",
     "Link": "https://kshitij-rbac.onrender.com/",
     "TechStack": ["MongoDB", "Express.js", "React", "Node.js", "Bootstrap"]
@@ -89,7 +89,7 @@
       "Real-Time Snackbar Notifications for Actions",
       "RESTful API Design with Error Handling"
     ],
-    "Github": "https://github.com/krish3742/HostedProjects/tree/main/Task%20Flow",
+    "Github": "https://github.com/krish3742/Task-Flow-Manager",
     "Img": "../../TaskManager.jpg",
     "Link": "https://task-flow-manager.onrender.com/",
     "TechStack": [
@@ -111,7 +111,7 @@
       "Smooth and responsive drawing experience",
       "Lightweight and efficient with a simple UI"
     ],
-    "Github": "https://github.com/krish3742/Mini-Projects/tree/main/Drawing_App",
+    "Github": "https://github.com/krish3742/Drawing-App",
     "Img": "../../DrawingApp.jpg",
     "Link": "https://drawing-app-chi-brown.vercel.app/",
     "TechStack": ["HTML", "CSS", "JavaScript"]
@@ -127,7 +127,7 @@
       "Responsive design for seamless experience across devices",
       "Built with React and Tailwind CSS for a modern UI"
     ],
-    "Github": "https://github.com/krish3742/HostedProjects/tree/main/Weather-app",
+    "Github": "https://github.com/krish3742/Meghdoot",
     "Img": "../../WeatherApp.png",
     "Link": "https://meghdoot.onrender.com/",
     "TechStack": ["React", "Tailwind CSS", "OpenWeather API"]
